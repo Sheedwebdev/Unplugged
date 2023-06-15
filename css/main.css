@@ -97,6 +97,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
  
 ul 
@@ -157,6 +158,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -171,6 +173,7 @@ header .header-divider {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a;
 }
 
 
@@ -178,14 +181,19 @@ header nav {
   width: 60%;
   /*font-size: 18px;*/
   font-size: 1.125em;
-  font-weight: bold;
-  /***padding: 20px 0 15px 0;***/
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+/**Is this being redundant since the font-size
+ is already called out in the nav???**/
+header nav ul li {
+  font-size: 1.125em;
 }
 
 /*******Footer Area******/
@@ -194,6 +202,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -242,6 +251,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  height: 500px;
 }
 
 .hero-area h1 {
@@ -252,12 +262,39 @@ footer .copyright {
 aside {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 aside .form input {
    /**font-size: 18px;**/
    font-size: 1.125em;
    font-weight: 500;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /*******Features Area*********/
@@ -300,6 +337,7 @@ aside .form input {
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -320,12 +358,13 @@ aside .form input {
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #527158;
   }
   
   .contact-section {
     display: flex;
     justify-content: center;
-    width: 90%;
+    background-color: #2a423a;
   }
 
   .contact-content p {
@@ -339,6 +378,7 @@ aside .form input {
   .faq {
     display: flex;
     justify-content: center;
+    background-color: #527158;
   }
   
   .faq .content-wrapper {
