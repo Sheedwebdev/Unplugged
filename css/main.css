@@ -694,6 +694,18 @@ input[type=button] {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 55%; 
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -822,6 +834,18 @@ input[type=button] {
       /**font-size: 48px;**/
       font-size: 3em;
    }
+
+   .map figure {
+    padding-bottom: 47%; 
+}
+ 
+.map iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+}
 
    /* ==========================================================================
     Desktop Styles FAQ Page
