@@ -100,27 +100,21 @@ body {
   color: #e2e3ed;
 }
  
-ul 
-  {
-   list-style: none;
-  }
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
  
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', 'Helvietica', 'Arial', sans-serif;
-  /*font-size: 36px;*/
-  font-size: 2.25em;
-  line-height: 43px;
-  font-weight: 500;
-}
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  /*font-size: 30px;*/
   font-size: 1.875em;
   font-weight: 500;
 }
@@ -128,19 +122,24 @@ h2 {
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-   /*font-size: 18px;*/
    font-size: 1.125em;
    font-weight: 500;
    margin: 20px 0;
 }
  
 p {
-	/*font-size: 14px;*/
-  font-size: 0.875em;
-  /*line-height: 18px;*/
-  line-height: 18px;
+  font-size: .875em;
+  line-height: 1.285;
 }
- 
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
  font-style: normal;
 }
@@ -149,6 +148,7 @@ address {
   width: 90%;
   margin: 50px 0;
 }
+
 
  
  /* -------------------- Base Header - Footer Styles -------------------- */
@@ -162,11 +162,15 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 header .header-divider {
@@ -179,7 +183,6 @@ header .header-divider {
 
 header nav {
   width: 60%;
-  /*font-size: 18px;*/
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -214,6 +217,10 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer .contact {
+  margin-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -221,8 +228,10 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  /**font-size: 21px;**/
-  font-size: 1.3125em;
+  /**font-size: 1.3125em;**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -249,13 +258,19 @@ footer .copyright {
 
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  height: 500px;
 }
 
 .hero-area h1 {
-  width: 90%;
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /*******Aside Area*********/
@@ -265,15 +280,16 @@ aside {
   background-color: #527158;
 }
 
-aside .form input {
-   /**font-size: 18px;**/
-   font-size: 1.125em;
-   font-weight: 500;
-}
-
 aside .form {
   margin-top: 30px;
 }
+
+/**aside .form input {
+   font-size: 1.125em;
+   font-weight: 500;
+}***/
+
+
  
 input[type=text] {
   box-sizing: border-box;
@@ -299,16 +315,21 @@ input[type=button] {
 
 /*******Features Area*********/
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  /***padding: 50px 0;****/
 }
-
-
-
 
 .features h2 {
   margin-bottom: 60px;
+}
+
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 
@@ -319,36 +340,29 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.features .features-icon {
-   /**font-size: 60px;**/
-   font-size: 3.75em;
-}
-
-.features article {
-  width: 60%;
-  margin: 30px 0;
-}
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
 /*******Reviews Area*********/
+
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
-  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
   width: 55%;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
-
 
 /* ==========================================================================
    Mobile Styles About Page
@@ -590,13 +604,33 @@ input[type=button] {
 
 /* Reviews */
 
-  .reviews h2 {
+  /**.reviews h2 {
     width: 80%       
-  }
-  .reviews article {
+  }**/
+
+  /**.reviews article {
      width: 49%;
      display: flex;
      justify-content: space-between;
+  }***/
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
 
@@ -742,8 +776,19 @@ input[type=button] {
   }
 
   /* Reviews */ 
+
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
-     width: 42.5%;
+     width: 42%;
+  }
+
+  /* Footer */ 
+
+  footer h4 {
+    font-size: 1.875em;
   }
 
 
