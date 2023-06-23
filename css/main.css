@@ -154,6 +154,7 @@ address {
  /* -------------------- Base Header - Footer Styles -------------------- */
 
 /******Header Area******/
+
 header {
   display: flex;
   justify-content: center;
@@ -173,13 +174,12 @@ header figure {
   width: 60%;
 }
 
-header .header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
+.header-divider {
   background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
-
 
 header nav {
   width: 60%;
@@ -189,12 +189,11 @@ header nav {
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
-/**Is this being redundant since the font-size
- is already called out in the nav???**/
+
 header nav ul li {
   font-size: 1.125em;
 }
@@ -549,34 +548,29 @@ input[type=button] {
 
    /* General or Global Tablet Styles */
 
-   h1 {
-    font-family: 'Poppins', 'Helvietica', 'Arial', sans-serif;
-    /*font-size: 48px;*/
-    font-size: 3em;
-    line-height: 48px;
-  }
   
-  h2 {
-    font-family: 'Poppins', sans-serif;
-    /*font-size: 36px;*/
-    font-size: 2.25em;
-    line-height: 48px;
-  }
-   
-  
-  h3, h4 {
-    font-family: 'Poppins', sans-serif;
-     /*font-size: 24px;*/
-     font-size: 1.5em;
-     line-height: 30px;
-     margin: 20px 0;
-  }
-   
- 
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
   }
+
+  h2 {
+    /**font-family: 'Poppins', sans-serif;**/
+    font-size: 2.25em;
+    line-height: 1.333;
+    /**line-height: 48px;**/
+  }
+   
+  h3 {
+     /**font-family: 'Poppins', sans-serif;**/
+     font-size: 1.5em;
+     line-height: 1.25;
+     /**line-height: 30px;**/
+    /**margin: 20px 0;**/
+  }
+   
+ 
+  
 
 /* Header */
 
@@ -586,8 +580,11 @@ input[type=button] {
 
   header .content-wrapper {
      width: 100%;
-     display: flex;
      justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -595,19 +592,26 @@ input[type=button] {
   }
 
   header nav ul {
-  /***width: 100%;****/
-    display: flex;
     justify-content: space-between;
   }
 
-  .header-divider {
+  header .header-divider {
      display: none;
   }
 
+ 
 /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+}
+
+ 
+
   .hero-area h1 {
-    width: 80%
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
   }
 
 /* Aside */
@@ -636,7 +640,7 @@ input[type=button] {
     }
 
     .features .features-item-description{
-      width: 50%;
+      width: 62%;
      }
  
 
@@ -683,6 +687,12 @@ input[type=button] {
       justify-content: space-between;
       align-items: center;
   }
+ 
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
 
   footer .contact {
     margin-bottom: 0;
@@ -759,8 +769,12 @@ input[type=button] {
      width: 100%;
   }
 
-  .faq h4, p {
-    /*font-size: 14px;*/
+  .faq h4 {
+    font-size: 0.875em;
+    line-height: 15.75px;
+  }
+
+  .faq p {
     font-size: 0.875em;
     line-height: 15.75px;
   }
@@ -775,10 +789,6 @@ input[type=button] {
    
   /* General or Global Desktop Styles */
   
-  h1 {
-    /**font-size: 60px;**/
-    font-size: 3.75em;
-  }
   
   h2 {
     /**font-size: 36px;**/
@@ -792,9 +802,8 @@ input[type=button] {
   }
     
   p {
-    /**font-size: 18px;**/
     font-size: 1.125em;
-    line-height: 24px;
+    line-height: 1.333;
   }
    /* Header */
    header {
@@ -809,17 +818,19 @@ input[type=button] {
  /* Hero */
   .hero-area h1 {
      width: 80%;
+     font-size: 3.75em;
   }
+
 
   /* Aside */
   aside .content-wrapper {
      justify-content: space-around;
   }
 
-  aside .content-wrapper .form-description,
+  /**aside .content-wrapper .form-description,
   aside .content-wrapper .form {
      width: 30%;
-  }
+  }**/
 
   /* Features */
   .features h2 {
@@ -884,10 +895,14 @@ input[type=button] {
       font-size: 3em;
   }
 
-  .faq h4, p {
-    /**font-size: 18px;**/
+  .faq h4 {
     font-size: 1.125em;
     line-height: 18px;
+}
+
+.faq p {
+  font-size: 1.125em;
+  line-height: 18px;
 }
 
   
