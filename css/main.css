@@ -257,10 +257,10 @@ footer .copyright {
 
 
 .hero-area {
-  background: url('../img/unplugged-retreat.jpg'); 
+  background: url('../img/unwind-hero-img.jpg'); 
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 800px;
   display: flex;
   justify-content: center;
 }
@@ -270,6 +270,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
+  color: #222;
 }
 
 /*******Mobile Aside Area*********/
@@ -337,17 +338,15 @@ input[type=button] {
   width: 75px;
   height: 75px;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .features i {
 	font-size: 3em;
   margin-bottom: 40px;
-  /**border: 2px solid black;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  background-color: black;**/
-
+  justify-content: center;
 }
 
 .features .features-items {
@@ -621,7 +620,7 @@ input[type=button] {
 /* Tablet Hero Area */
 
   .hero-area {
-    min-height: 600px;
+    min-height: 1200px;
 }
 
  
@@ -851,7 +850,12 @@ input[type=button] {
   }
 
  /* Desktop Hero Area */
-  .hero-area h1 {
+  
+ .hero-area {
+  min-height: 2000px;
+ }
+ 
+ .hero-area h1 {
      width: 80%;
      font-size: 3.75em;
   }
