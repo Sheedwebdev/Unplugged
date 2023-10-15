@@ -343,9 +343,10 @@ input[type=button] {
   align-items: center;
 }
 
+
 .features i {
-	font-size: 3em;
-  margin-bottom: 40px;
+  font-size: 3em;
+  /* margin-bottom: 40px; */
   justify-content: center;
 }
 
